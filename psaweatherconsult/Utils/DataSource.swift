@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MyVariables {
+struct DataSource {
     
     static var citys:[City] = []
     

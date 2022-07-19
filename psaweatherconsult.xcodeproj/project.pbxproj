@@ -46,7 +46,7 @@
 		E094880228816B9E0099CD4A /* CityListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094880128816B9E0099CD4A /* CityListPresenter.swift */; };
 		E094880628816C620099CD4A /* WeatherDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094880528816C620099CD4A /* WeatherDetailsWorker.swift */; };
 		E094880B28816DC00099CD4A /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094880A28816DC00099CD4A /* CityCell.swift */; };
-		E0B6B6E22884493E0077DC3F /* MyVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B6B6E12884493E0077DC3F /* MyVariables.swift */; };
+		E0B6B6E22884493E0077DC3F /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B6B6E12884493E0077DC3F /* DataSource.swift */; };
 		E0B6B6E428844E440077DC3F /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0B6B6E328844E440077DC3F /* CityCell.xib */; };
 		E0B6B6E62884629D0077DC3F /* GetWeatherInfosAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B6B6E52884629D0077DC3F /* GetWeatherInfosAPIRouter.swift */; };
 		E0B6B6E828858C500077DC3F /* WeatherDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0B6B6E728858C500077DC3F /* WeatherDetails.storyboard */; };
@@ -120,7 +120,7 @@
 		E094880128816B9E0099CD4A /* CityListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListPresenter.swift; sourceTree = "<group>"; };
 		E094880528816C620099CD4A /* WeatherDetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsWorker.swift; sourceTree = "<group>"; };
 		E094880A28816DC00099CD4A /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
-		E0B6B6E12884493E0077DC3F /* MyVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVariables.swift; sourceTree = "<group>"; };
+		E0B6B6E12884493E0077DC3F /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		E0B6B6E328844E440077DC3F /* CityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
 		E0B6B6E52884629D0077DC3F /* GetWeatherInfosAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherInfosAPIRouter.swift; sourceTree = "<group>"; };
 		E0B6B6E728858C500077DC3F /* WeatherDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeatherDetails.storyboard; sourceTree = "<group>"; };
@@ -281,7 +281,7 @@
 		E094875428805CE20099CD4A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				E0B6B6E12884493E0077DC3F /* MyVariables.swift */,
+				E0B6B6E12884493E0077DC3F /* DataSource.swift */,
 				E0B6B6FB288614920077DC3F /* Utils.swift */,
 			);
 			path = Utils;
@@ -557,7 +557,7 @@
 				E09487CE28807E510099CD4A /* NetworkHTTPMethod.swift in Sources */,
 				E09487E628807E510099CD4A /* NetworkManager.swift in Sources */,
 				E09487E8288080920099CD4A /* City.swift in Sources */,
-				E0B6B6E22884493E0077DC3F /* MyVariables.swift in Sources */,
+				E0B6B6E22884493E0077DC3F /* DataSource.swift in Sources */,
 				E09487C928807E510099CD4A /* NetworkRouter.swift in Sources */,
 				E0B6B6EA2885E7940077DC3F /* Current.swift in Sources */,
 				E0B6B6F82885EC690077DC3F /* Temp.swift in Sources */,

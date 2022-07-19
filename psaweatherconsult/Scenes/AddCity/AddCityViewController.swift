@@ -83,7 +83,7 @@ extension AddCityViewController: AddCityProtocol {
     
     func addCity() {
         guard let city: City = self.selectedCity else { return }
-        MyVariables.citys.append(city)
+        DataSource.citys.append(city)
         self.navigationController?.popToRootViewController(animated: true)
     }
     

@@ -51,10 +51,7 @@ extension WeatherDetailsViewController : WeatherDetailsProtocol {
     
     func reloadData(cityWeather: CityWeather) {
         
-        //weatherIconImage
-        
-        //weatherIconImage.setImage(with : URL(string: Constants.imagesBaseUrl + cityWeather.current.weather?.first?.icon + Constants.imageBaseSize))
-        //print("DOUIK ",     cityWeather.current.weather?.first?.icon)
+        weatherIconImage.image = UIImage(named: cityWeather.current.weather?.first?.icon ?? "AppIcon")
         dateLabel.text = Utils.dateString(dt : String(cityWeather.current.dt!),format: "YYYY/MM/dd")
         weatherDescriptionLabel.text = cityWeather.current.weather?.first?.description
         

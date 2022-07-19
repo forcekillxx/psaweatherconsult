@@ -16,37 +16,22 @@ class CityListPresenter {
     }
     
     func numberOfItems()-> Int {
-        return MyVariables.citys.count
+        return DataSource.citys.count
     }
     
     func configure(cell: CityCell, indexPath: IndexPath) {
-        let city = MyVariables.citys[indexPath.row]
+        let city = DataSource.citys[indexPath.row]
         cell.configure(cityWeather: city)
     }
     
     func didSelectedItemAt(indexPath : IndexPath){
-        view.showWeatherDetail(city: MyVariables.citys[indexPath.row])
+        view.showWeatherDetail(city: DataSource.citys[indexPath.row])
     }
     
     func testDataNumber() {
-        if MyVariables.citys.count == 0 {
+        if DataSource.citys.count == 0 {
             view.displayErrorNoData()
         }
-    }
-    
-    func getWeatherList() {
-        //        weatherListWorker.getWeatherList(completionHandler: { [weak self] result in
-        //            guard let self = self else { return }
-        //            switch result {
-        //            case .success(let weatherList):
-        //                self.view.hideLoader()
-        //                self.citiesList = weatherList.list!
-        //                self.view.reloadData()
-        //            case .failure(let error):
-        //                self.view.hideLoader()
-        //                self.view.displayError(error: error)
-        //            }
-        //        })
     }
     
 }
