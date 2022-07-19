@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add City View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AddCityViewController" id="Y6W-OH-hqX" customClass="AddCityViewController" customModule="psaweatherconsult" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5z-g6-M14">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Veuillez saisir le nom d'une ville" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="5Vs-ey-eTr">
+                                <rect key="frame" x="20" y="109" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="location"/>
+                            </textField>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7r-aw-XGJ">
+                                <rect key="frame" x="0.0" y="811" width="414" height="85"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector" translatesAutoresizingMaskIntoConstraints="NO" id="qZ7-br-k2t">
+                                        <rect key="frame" x="16" y="31.5" width="16" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="ZO2-cW-zOQ"/>
+                                            <constraint firstAttribute="width" constant="16" id="n2L-W9-VWi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtB-AK-3Vb">
+                                        <rect key="frame" x="70" y="20" width="225" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="cNz-Jn-XUC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" red="0.016845978800000001" green="0.065333746370000001" blue="0.59532642359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPN-tU-Hm0">
+                                        <rect key="frame" x="303" y="23.5" width="103" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="103" id="HC6-53-d6w"/>
+                                            <constraint firstAttribute="height" constant="38" id="N5P-wa-lDV"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="VectorAdd" title="Ajouter">
+                                            <color key="baseBackgroundColor" red="0.016845978800000001" green="0.065333746370000001" blue="0.59532642359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addCityAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4SY-Nc-4BK"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="France" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFe-zM-4Sz">
+                                        <rect key="frame" x="70" y="49" width="225" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="lLR-xW-TPP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.62252688410000001" green="0.59529948229999996" blue="0.674086988" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JPN-tU-Hm0" secondAttribute="trailing" constant="8" id="6Ji-rl-qW5"/>
+                                    <constraint firstItem="JPN-tU-Hm0" firstAttribute="leading" secondItem="LFe-zM-4Sz" secondAttribute="trailing" constant="8" id="AfF-7N-yzO"/>
+                                    <constraint firstItem="LFe-zM-4Sz" firstAttribute="leading" secondItem="qZ7-br-k2t" secondAttribute="trailing" constant="38" id="E6S-1T-GtW"/>
+                                    <constraint firstAttribute="height" constant="85" id="FKN-sX-juz"/>
+                                    <constraint firstItem="JPN-tU-Hm0" firstAttribute="leading" secondItem="RtB-AK-3Vb" secondAttribute="trailing" constant="8" symbolic="YES" id="avn-ct-ZQY"/>
+                                    <constraint firstItem="RtB-AK-3Vb" firstAttribute="leading" secondItem="qZ7-br-k2t" secondAttribute="trailing" constant="38" id="bqY-nG-7NH"/>
+                                    <constraint firstItem="JPN-tU-Hm0" firstAttribute="centerY" secondItem="Y7r-aw-XGJ" secondAttribute="centerY" id="cDA-LZ-irV"/>
+                                    <constraint firstItem="qZ7-br-k2t" firstAttribute="centerY" secondItem="Y7r-aw-XGJ" secondAttribute="centerY" id="gPl-pn-8eZ"/>
+                                    <constraint firstItem="RtB-AK-3Vb" firstAttribute="top" secondItem="Y7r-aw-XGJ" secondAttribute="top" constant="20" id="kpu-aX-4Cb"/>
+                                    <constraint firstItem="qZ7-br-k2t" firstAttribute="leading" secondItem="Y7r-aw-XGJ" secondAttribute="leading" constant="16" id="s5K-JS-Xn4"/>
+                                    <constraint firstItem="LFe-zM-4Sz" firstAttribute="top" secondItem="Y7r-aw-XGJ" secondAttribute="top" constant="49" id="vus-B3-CIb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <constraints>
+                            <constraint firstItem="q5z-g6-M14" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="5L9-EQ-Ava"/>
+                            <constraint firstItem="q5z-g6-M14" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BNk-im-tHy"/>
+                            <constraint firstItem="Y7r-aw-XGJ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="EWL-0l-BuM"/>
+                            <constraint firstAttribute="bottom" secondItem="q5z-g6-M14" secondAttribute="bottom" id="FEV-Ct-rdV"/>
+                            <constraint firstItem="Y7r-aw-XGJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Jij-Ce-PbF"/>
+                            <constraint firstItem="5Vs-ey-eTr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="LPo-c2-ibP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5Vs-ey-eTr" secondAttribute="trailing" constant="20" id="OSd-ec-yQm"/>
+                            <constraint firstItem="5Vs-ey-eTr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="21" id="Vlh-dE-pCh"/>
+                            <constraint firstAttribute="bottom" secondItem="Y7r-aw-XGJ" secondAttribute="bottom" id="ZSG-Jr-yPc"/>
+                            <constraint firstItem="q5z-g6-M14" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="a3c-ir-2dn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AWK-ZZ-3YK">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="search" id="AYn-LE-g1g">
+                            <connections>
+                                <action selector="searchCityAction:" destination="Y6W-OH-hqX" id="w6s-Lr-2Db"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cityLabel" destination="RtB-AK-3Vb" id="mfR-lk-idm"/>
+                        <outlet property="cityNameTextField" destination="5Vs-ey-eTr" id="9GX-vc-iGz"/>
+                        <outlet property="countryLabel" destination="LFe-zM-4Sz" id="cxB-E8-Ixz"/>
+                        <outlet property="mapView" destination="q5z-g6-M14" id="WaO-7X-F2Z"/>
+                        <outlet property="viewAddCity" destination="Y7r-aw-XGJ" id="WKQ-Dv-iIh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.81159420289862" y="53.571428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="86z-KA-QSc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yt1-qc-A84" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8eX-JJ-Vhm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="afi-V4-USo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IJ3-Q3-uYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.666666666666671" y="53.571428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Vector" width="14" height="20"/>
+        <image name="VectorAdd" width="16" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
