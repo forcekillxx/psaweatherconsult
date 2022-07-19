@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5z-g6-M14">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </mapView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Veuillez saisir le nom d'une ville" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="5Vs-ey-eTr">
                                 <rect key="frame" x="20" y="109" width="374" height="34"/>
@@ -84,7 +84,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="q5z-g6-M14" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="5L9-EQ-Ava"/>
                             <constraint firstItem="q5z-g6-M14" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BNk-im-tHy"/>
@@ -92,14 +92,15 @@
                             <constraint firstAttribute="bottom" secondItem="q5z-g6-M14" secondAttribute="bottom" id="FEV-Ct-rdV"/>
                             <constraint firstItem="Y7r-aw-XGJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Jij-Ce-PbF"/>
                             <constraint firstItem="5Vs-ey-eTr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="LPo-c2-ibP"/>
+                            <constraint firstItem="q5z-g6-M14" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="NFI-u9-IyS"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5Vs-ey-eTr" secondAttribute="trailing" constant="20" id="OSd-ec-yQm"/>
                             <constraint firstItem="5Vs-ey-eTr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="21" id="Vlh-dE-pCh"/>
                             <constraint firstAttribute="bottom" secondItem="Y7r-aw-XGJ" secondAttribute="bottom" id="ZSG-Jr-yPc"/>
-                            <constraint firstItem="q5z-g6-M14" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="a3c-ir-2dn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AWK-ZZ-3YK">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="search" id="AYn-LE-g1g">
+                            <color key="tintColor" systemColor="tintColor"/>
                             <connections>
                                 <action selector="searchCityAction:" destination="Y6W-OH-hqX" id="w6s-Lr-2Db"/>
                             </connections>
