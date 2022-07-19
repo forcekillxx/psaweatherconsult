@@ -24,5 +24,8 @@ Clone the repository:
 ```shell
 git clone git@github.com:forcekillxx/psaweatherconsult.git
 
+```Figma design (Not implemented fully)
+https://www.figma.com/file/X1okNSnc2zNdVIfNgk0nBW/Untitled
+
 
 We are done!
